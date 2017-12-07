@@ -35,7 +35,7 @@ with open("class_content.json", "r") as f:
                 content
                 ])
             #if len(post['history']) > 1:
-                # need to split by line to make this useful
+                # need to split by line or word diff to make this useful
                 #print ''.join(difflib.ndiff([post['history'][0]['content']], [post['history'][1]['content']]))
                 #print post['history']
             i += 1
