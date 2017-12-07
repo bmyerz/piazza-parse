@@ -29,7 +29,7 @@ with open("class_content.json", "r") as f:
             if (re.search(delpat, content) is not None) or (re.search(delpat, subject) is not None):
                 print "WARNING, skipped because of delimiter conflict"
                 print '\t', subject, '\n', content[:128], "..."
-                pass
+                continue
             csvout.writerow([i,
                 subject,
                 content
